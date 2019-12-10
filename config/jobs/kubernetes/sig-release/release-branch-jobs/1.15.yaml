@@ -163,6 +163,10 @@ periodics:
     testgrid-num-failures-to-alert: "1"
     testgrid-tab-name: gce-cos-1.15-scalability-100
   cron: 0 0/12 * * *
+  tags:
+  - "perfDashPrefix: gce-100Nodes"
+  - "perfDashJobType: performance"
+  - "perfDashBuildsCount: 500"
   labels:
     preset-e2e-scalability-common: "true"
     preset-k8s-ssh: "true"
